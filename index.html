@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -8,22 +10,36 @@
     />
     <title>Portfólio Leon Graff</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile-styles.css" />
     <script src="./js/script.js"></script>
     <script src="./js/routes.js"></script>
 </head>
 <body>
-    <div style="padding: 30px 100px">
-        <header class="row flex-end">
-            <nav class="row flex-end" style="gap: 7rem">
+    <div style="padding: 10px">
+        <header class="header">
+            <a href="#/sobre">
+                <div class="img-logo"></div>
+            </a>
+            <button id="menu-toggle" class="hamburger" aria-label="Abrir menu">☰</button>
+            <nav id="main-nav" class="nav-links">
                 <a href="#/sobre">Sobre</a>
                 <a href="#/formacao">Formação</a>
                 <a href="#/portfolio">Portfolio</a>
                 <a href="#/contato">Contato</a>
             </nav>
         </header>
-        <section>
-            <div id="render-div"></div>
+        <section class="section-class" style="width: 100%; padding: 3vh 3vw">
+            <div id="render-div" style="width: 100%"></div>
+            <!-- <h1 style="margin: 400px; font-size: 50px">teste</h1> -->
         </section>
         <footer></footer>
     </div>
+    <a
+        class="wpp-img"
+        title="Mande um alô!"
+        target="_blank"
+        href="https://wa.me/5547988862810?text=Ol%C3%A1%2C%20vim%20a%20partir%20do%20seu%20site%20de%20desenvolvedor!"
+    >
+        <img width="90px" src="./assets/whatsapp.png" alt="Mande um alô!" />
+    </a>
 </body>

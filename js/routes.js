@@ -20,6 +20,7 @@ async function loadPage() {
         return;
     }
     try {
+        document.getElementById("main-nav").classList.remove("active");
         const res = await fetch(page);
         const html = await res.text();
         document.getElementById("render-div").innerHTML = html;

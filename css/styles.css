@@ -1,14 +1,49 @@
+:root {
+    --red: #ff4957;
+    --purple: #23263a;
+    --purple-dark: #1a1c2c;
+}
 * {
     font-family: "Poppins", sans-serif;
 }
+
+body {
+    min-height: 100vh;
+    color: white;
+    margin: 0px;
+    background: linear-gradient(to bottom, var(--purple) 0%, var(--purple) 70%, var(--purple-dark) 100%);
+}
 header {
-    font-size: 18px;
+    font-size: 22px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 3vw;
+    position: relative;
 }
 header a {
     text-decoration: none;
+    color: white;
 }
+
 nav a.active {
     font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 7rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
 }
 
 .row {
@@ -19,14 +54,18 @@ nav a.active {
 .flex-start {
     justify-content: flex-start;
     align-items: center;
+    height: 100%;
 }
 .flex-center {
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
+
 .flex-end {
     justify-content: flex-end;
     align-items: center;
+    height: 100%;
 }
 .col-50 {
     flex-basis: 50%;
@@ -37,6 +76,136 @@ nav a.active {
 .col-20 {
     flex-basis: 20%;
 }
+.col-100 {
+    flex-basis: 100%;
+}
 .spa-bet {
     justify-content: space-between;
+}
+.h-60v {
+    min-height: 60vh;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.red {
+    color: var(--red);
+}
+.section-class {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.section-title {
+    font-size: clamp(3rem, 6vw, 8rem);
+    font-weight: 600;
+}
+.section-text {
+    font-size: clamp(1rem, 1vw, 3rem);
+}
+.img-logo {
+    background-image: url("../assets/logo-graff.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160% auto;
+    width: 200px;
+    height: 100px;
+}
+.me-pic {
+    background-image: url("../assets/me.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+.dinamic-align {
+    align-items: center;
+}
+.work-block {
+    height: auto;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 25px;
+}
+.work-title {
+    font-size: clamp(1rem, 1vw, 3rem);
+}
+.form-control {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 15px 15px;
+
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    background: #fafafa;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.form-control::placeholder {
+    color: #8d8d8d;
+    font-size: 18px;
+    opacity: 0.5;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+}
+
+.form-control:-ms-input-placeholder {
+    color: #8d8d8d;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+}
+
+.form-control::-ms-input-placeholder {
+    color: #8d8d8d;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+}
+.btn {
+    background-color: var(--red);
+    color: white;
+    font-size: 18px;
+    padding: 10px 35px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+.pd-left {
+    padding-left: 30px;
+}
+.wpp-img {
+    position: fixed;
+    bottom: 55px;
+    right: 55px;
+    transition: transform 0.3s ease-in-out;
+}
+.wpp-img:hover {
+    transform: scale(1.1);
+}
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    user-select: none;
 }
