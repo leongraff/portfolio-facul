@@ -1,0 +1,42 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+header {
+    font-size: 18px;
+}
+header a {
+    text-decoration: none;
+}
+nav a.active {
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-start {
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.flex-end {
+    justify-content: flex-end;
+    align-items: center;
+}
+.col-50 {
+    flex-basis: 50%;
+}
+.col-25 {
+    flex-basis: 25%;
+}
+.col-20 {
+    flex-basis: 20%;
+}
+.spa-bet {
+    justify-content: space-between;
+}
