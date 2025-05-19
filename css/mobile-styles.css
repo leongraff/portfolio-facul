@@ -85,4 +85,12 @@
     .pd-left {
         padding-left: 0px;
     }
+    .wpp-img {
+        width: 35px !important;
+        bottom: 25px;
+        right: 45px;
+    }
+    .img-zap {
+        width: 70px;
+    }
 }

@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vh 3vw;
+    padding: 1.5vh 3vw;
     position: relative;
 }
 header a {
@@ -208,4 +208,7 @@ nav a.active {
     pointer-events: none;
     cursor: not-allowed;
     user-select: none;
+}
+.img-zap {
+    width: 90px;
 }
